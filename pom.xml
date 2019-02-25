@@ -9,8 +9,6 @@
       <tag>HEAD</tag>
   </scm>
 	
-	<!-- Repository Information -->
-	
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
