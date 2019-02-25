@@ -10,17 +10,7 @@
   </scm>
 	
 	<!-- Repository Information -->
-	<distributionManagement>
-		<repository>
-			<id>nexus-releases</id>
-			<!-- http://localhost:8081/repository/<repository-name> -->
-			<url>http://localhost:8081/repository/api-release</url>
-		</repository>
-	</distributionManagement>
-	<profiles>
-		<profile>
-			<id>test</id>
-			<build>
+	
 				<plugins>
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
@@ -62,11 +52,6 @@
 								</goals>
 							</execution>
 						</executions>
-						<configuration>
-							<serverId>nexus-releases</serverId>
-							<nexusUrl>http://localhost:8081/</nexusUrl>
-							<skipStaging>true</skipStaging>
-						</configuration>
 					</plugin>
 				</plugins>
 			</build>
