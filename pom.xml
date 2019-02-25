@@ -6,7 +6,7 @@
 	<scm>
 		<url>https://github.com/aravindan23/profExam</url>
 		<connection>scm:git:https://github.com/aravindan23/profExam.git</connection>
-          <tag>v0.3</tag>
+          <tag>HEAD</tag>
   </scm>
 	
 	<!-- Repository Information -->
