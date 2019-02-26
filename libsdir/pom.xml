@@ -1,0 +1,64 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.test</groupId>
+	<artifactId>maven-release-plugin-example</artifactId>
+	<version>0.2-SNAPSHOT</version>
+	<scm>
+		<url>https://github.com/aravindan23/TEST</url>
+		<connection>scm:git:https://github.com/aravindan23/TEST.git</connection>
+      <tag>HEAD</tag>
+  </scm>
+	<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>0c0d4d9ae15a-releases</name>
+        <url>http://admin:password@10.6.7.38:8081/artifactory/libs-release-local</url>
+    </repository>
+</distributionManagement>
+	
+	<profiles>
+		<profile>
+			<id>test</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.1</version>
+						<executions>
+							<execution>
+								<phase>test</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<echo>Using env.test.properties</echo>
+										<!-- Using predefined maven properties mentioned in https://github.com/arpitaggarwal/predefined_maven_properties -->
+										<copy file="src/main/resources/env.test.properties" tofile="${project.build.outputDirectory}/env.properties" />
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+	<build>
+	 <pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+				    <tag>v${releaseVersion}</tag>
+					<tagNameFormat>v@{project.version}</tagNameFormat>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
+		</plugins>
+		 </pluginManagement>
+	</build>
+</project>
