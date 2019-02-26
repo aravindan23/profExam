@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.test</groupId>
 	<artifactId>libsdirectory</artifactId>
-	<version>0.4-SNAPSHOT</version>
+	<version>0.5-SNAPSHOT</version>
 	<scm>
 		<url>https://github.com/aravindan23/TEST</url>
 		<connection>scm:git:https://github.com/aravindan23/TEST.git</connection>
@@ -15,11 +15,6 @@
         <name>0c0d4d9ae15a-releases</name>
         <url>http://admin:password@10.6.7.38:8081/artifactory/libs-release-local</url>
     </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>0c0d4d9ae15a-snapshots</name>
-        <url>http://admin:password@10.6.7.38:8081/artifactory/libs-snaps-local</url>
-    </snapshotRepository>
 </distributionManagement>
 	<profiles>
 		<profile>
