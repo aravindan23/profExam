@@ -6,7 +6,6 @@
 	<scm>
 		<url>https://github.com/aravindan23/TEST</url>
 		<connection>scm:git:https://github.com/aravindan23/TEST.git</connection>
-    <tag>HEAD</tag>
   </scm>
 	<distributionManagement>
     <repository>
