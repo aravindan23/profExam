@@ -6,7 +6,6 @@
 	<scm>
 		<url>https://github.com/aravindan23/TEST</url>
 		<connection>scm:git:https://github.com/aravindan23/TEST.git</connection>
-      <tag>HEAD</tag>
   </scm>
 	<distributionManagement>
     <repository>
@@ -50,12 +49,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>2.5.3</version>
-				<configuration>
-				    <tag>v${releaseVersion}</tag>
-					<tagNameFormat>v@{project.version}</tagNameFormat>
-					<autoVersionSubmodules>true</autoVersionSubmodules>
-				</configuration>
+				<version>2.5.3</version>				
 	                </plugin>
 		</plugins>
 		 </pluginManagement>
