@@ -13,12 +13,12 @@
     <repository>
         <id>central</id>
         <name>0c0d4d9ae15a-releases</name>
-        <url>http://10.6.7.38:8081/artifactory/libs-release-local</url>
+        <url>http://10.6.7.38:8081/artifactory/libs-snaps-local</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>0c0d4d9ae15a-snapshots</name>
-        <url>http://10.6.7.38:8081/artifactory/libs-release-local</url>
+        <url>http://10.6.7.38:8081/artifactory/libs-snaps-local</url>
     </snapshotRepository>
 </distributionManagement>
 	<profiles>
