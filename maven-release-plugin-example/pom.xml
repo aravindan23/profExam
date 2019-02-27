@@ -6,15 +6,17 @@
 	<scm>
 		<url>https://github.com/aravindan23/TEST</url>
 		<connection>scm:git:https://github.com/aravindan23/TEST.git</connection>
-    <tag>v0.15</tag>
+    <tag>HEAD</tag>
   </scm>
-	<distributionManagement>
-    <repository>
-        <id>central</id>
-	<name>0c0d4d9ae15a-releases</name>
-        <url>http://admin:password@10.6.7.38:8081/artifactory/libs-release-local</url>  
-    </repository>		
-</distributionManagement>
+	<repositories>
+        <repository>
+            <id>Spring Releases Repository</id>
+            <url>http://repo.spring.io/release</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
 	<profiles>
 		<profile>
 			<id>test</id>
