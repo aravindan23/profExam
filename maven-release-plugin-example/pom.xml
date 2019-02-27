@@ -11,6 +11,8 @@
 	<distributionManagement>
     <repository>
         <id>central</id>
+	<name>0c0d4d9ae15a-releases</name>
+        <url>http://admin:password@10.6.7.38:8081/artifactory/libs-release-local</url>  
     </repository>		
 </distributionManagement>
 	<profiles>
